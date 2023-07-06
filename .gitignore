@@ -1,0 +1,7 @@
+node_modules
+docs/.vuepress/dist
+push.bat
+push.sh
+deploy.sh
+rclone.sh
+.vscode
