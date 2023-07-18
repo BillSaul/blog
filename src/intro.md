@@ -1,10 +1,11 @@
 ---
-cover: /assets/images/cover3.jpg
+title: 关于本站
 article: false
 timeline: false
 pageInfo: false
 breadcrumb: false
 breadcrumbIcon: false
+toc: false
 ---
 
 ## 📘 博客
@@ -21,8 +22,6 @@ breadcrumbIcon: false
 ## 📜 评论系统
 
 博客使用的评论系统为 [Waline](https://waline.js.org/)
-
-<br>
 
 ::: tip
 博客内容都是从网上收集整理的，如有错误多多包涵 (。・ω・。)

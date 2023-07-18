@@ -6,6 +6,27 @@ export default navbar([
     link: "/",
   },
   {
+    text: "⭐ 收藏",
+    children: [
+      {
+        text: "🌐 网站",
+        link: "/pages/87b1e9/"
+      },
+      {
+        text: "📦 资源",
+        link: "/pages/c47f0e/"
+      },
+      {
+        text: "📝 教程",
+        link: "/pages/f7b22f/"
+      },
+      {
+        text: "📐 制表符",
+        link: "/pages/47886c/"
+      },
+    ]
+  },
+  {
     text: "🗂️ 索引",
     children: [
       {

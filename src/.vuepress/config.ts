@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { path } from "@vuepress/utils";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -9,6 +10,10 @@ export default defineUserConfig({
   description: "个人技术博客，记录和分享各种技术知识",
 
   theme,
+
+  alias: {
+    "@theme-hope/modules/blog/components/BlogHero": path.resolve(__dirname, "./components/BlogHero.vue"),
+  },
 
   // Enable it with pwa
   // shouldPrefetch: false,
