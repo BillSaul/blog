@@ -111,9 +111,9 @@ export default sidebar({
       ],
     },
     {
-      text: "其它",
+      text: "随笔",
       icon: "laptop-code",
-      prefix: "90.其它/",
+      prefix: "90.随笔/",
       collapsible: true,
       children: "structure",
     },

@@ -32,7 +32,6 @@ function outputFrontmatter() {
   console.log("title: ");
   console.log("date: " + getBirthtime());
   console.log("permalink: /pages/" + (Math.random() + Math.random()).toString(16).slice(2, 8) + "/");
-  console.log("isOriginal: true");
   console.log('excerpt: " "');
   console.log("---");
 }
