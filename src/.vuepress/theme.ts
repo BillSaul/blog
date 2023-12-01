@@ -44,7 +44,14 @@ export default hopeTheme(
     // 博客选项
     blog: {
       // 文章列表中展示的文章信息
-      articleInfo: ["Original", "Date", "PageView", "Category", "Tag", "ReadingTime"],
+      articleInfo: [
+        "Original",
+        "Date",
+        "PageView",
+        "Category",
+        "Tag",
+        "ReadingTime",
+      ],
       // 口号、座右铭或介绍语
       description: "一个前端开发者",
       // 博主的个人介绍地址
@@ -87,26 +94,54 @@ export default hopeTheme(
       // all features are enabled for demo, only preserve features you need here
       // Markdown 增强配置
       mdEnhance: {
-        card: true,
         align: true,
         attrs: true,
-        chart: true,
+
+        // install chart.js before enabling it
+        // chart: true,
+
         codetabs: true,
+
+        // insert component easily
+        // component: true,
+
         demo: true,
-        echarts: true,
+
+        // install echarts before enabling it
+        // echarts: true,
+
         figure: true,
-        flowchart: true,
-        gfm: true,
+
+        // install flowchart.ts before enabling it
+        // flowchart: true,
+
+        // gfm requires mathjax-full to provide tex support
+        // gfm: true,
+
         imgLazyload: true,
         imgSize: true,
         include: true,
-        katex: true,
+
+        // install katex before enabling it
+        // katex: true,
+
+        // install mathjax-full before enabling it
+        // mathjax: true,
+
         mark: true,
-        mermaid: true,
+
+        // install mermaid before enabling it
+        // mermaid: true,
+
         playground: {
           presets: ["ts", "vue"],
         },
-        presentation: ["highlight", "math", "search", "notes", "zoom"],
+
+        // install reveal.js before enabling it
+        // revealJs: {
+        //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+        // },
+
         stylize: [
           {
             matcher: "Recommended",
@@ -124,7 +159,9 @@ export default hopeTheme(
         sup: true,
         tabs: true,
         vPre: true,
-        vuePlayground: true,
+
+        // install @vue/repl before enabling it
+        // vuePlayground: true,
       },
     },
   },
