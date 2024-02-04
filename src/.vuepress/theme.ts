@@ -53,7 +53,7 @@ export default hopeTheme(
         "ReadingTime",
       ],
       // 口号、座右铭或介绍语
-      description: "一个前端开发者",
+      description: "风带来故事的种子，时间使之发芽",
       // 博主的个人介绍地址
       intro: "/intro.html",
       // 博主的媒体链接配置
