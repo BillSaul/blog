@@ -70,7 +70,7 @@ export default hopeTheme(
       },
     },
 
-    // page meta
+    // 多语言配置
     metaLocales: {
       editLink: "在 GitHub 上编辑此页",
     },
@@ -91,57 +91,24 @@ export default hopeTheme(
         serverURL: "https://waline-1-h6460307.deta.app",
       },
 
-      // all features are enabled for demo, only preserve features you need here
-      // Markdown 增强配置
+      components: {
+        components: ["Badge", "VPCard"],
+      },
+
+      // 此处开启了很多功能用于演示，你应仅保留用到的功能。
       mdEnhance: {
         align: true,
         attrs: true,
-
-        // install chart.js before enabling it
-        // chart: true,
-
         codetabs: true,
-
-        // insert component easily
-        // component: true,
-
+        component: true,
         demo: true,
-
-        // install echarts before enabling it
-        // echarts: true,
-
         figure: true,
-
-        // install flowchart.ts before enabling it
-        // flowchart: true,
-
-        // gfm requires mathjax-full to provide tex support
-        // gfm: true,
-
         imgLazyload: true,
         imgSize: true,
         include: true,
-
-        // install katex before enabling it
-        // katex: true,
-
-        // install mathjax-full before enabling it
-        // mathjax: true,
-
         mark: true,
-
-        // install mermaid before enabling it
-        // mermaid: true,
-
-        playground: {
-          presets: ["ts", "vue"],
-        },
-
-        // install reveal.js before enabling it
-        // revealJs: {
-        //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-        // },
-
+        plantuml: true,
+        spoiler: true,
         stylize: [
           {
             matcher: "Recommended",
@@ -158,11 +125,104 @@ export default hopeTheme(
         sub: true,
         sup: true,
         tabs: true,
+        tasklist: true,
         vPre: true,
 
-        // install @vue/repl before enabling it
+        // 在启用之前安装 chart.js
+        // chart: true,
+
+        // insert component easily
+
+        // 在启用之前安装 echarts
+        // echarts: true,
+
+        // 在启用之前安装 flowchart.ts
+        // flowchart: true,
+
+        // gfm requires mathjax-full to provide tex support
+        // gfm: true,
+
+        // 在启用之前安装 katex
+        // katex: true,
+
+        // 在启用之前安装 mathjax-full
+        // mathjax: true,
+
+        // 在启用之前安装 mermaid
+        // mermaid: true,
+
+        // playground: {
+        //   presets: ["ts", "vue"],
+        // },
+
+        // 在启用之前安装 reveal.js
+        // revealJs: {
+        //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+        // },
+
+        // 在启用之前安装 @vue/repl
         // vuePlayground: true,
+
+        // install sandpack-vue3 before enabling it
+        // sandpack: true,
       },
+
+      // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
+      // pwa: {
+      //   favicon: "/favicon.ico",
+      //   cacheHTML: true,
+      //   cacheImage: true,
+      //   appendBase: true,
+      //   apple: {
+      //     icon: "/assets/icon/apple-icon-152.png",
+      //     statusBarColor: "black",
+      //   },
+      //   msTile: {
+      //     image: "/assets/icon/ms-icon-144.png",
+      //     color: "#ffffff",
+      //   },
+      //   manifest: {
+      //     icons: [
+      //       {
+      //         src: "/assets/icon/chrome-mask-512.png",
+      //         sizes: "512x512",
+      //         purpose: "maskable",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-mask-192.png",
+      //         sizes: "192x192",
+      //         purpose: "maskable",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-512.png",
+      //         sizes: "512x512",
+      //         type: "image/png",
+      //       },
+      //       {
+      //         src: "/assets/icon/chrome-192.png",
+      //         sizes: "192x192",
+      //         type: "image/png",
+      //       },
+      //     ],
+      //     shortcuts: [
+      //       {
+      //         name: "Demo",
+      //         short_name: "Demo",
+      //         url: "/demo/",
+      //         icons: [
+      //           {
+      //             src: "/assets/icon/guide-maskable.png",
+      //             sizes: "192x192",
+      //             purpose: "maskable",
+      //             type: "image/png",
+      //           },
+      //         ],
+      //       },
+      //     ],
+      //   },
+      // },
     },
   },
   {
