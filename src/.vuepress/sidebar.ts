@@ -39,6 +39,13 @@ export default sidebar({
       children: "structure",
     },
     {
+      text: "All In One",
+      icon: "laptop-code",
+      prefix: "03.All In One/",
+      collapsible: true,
+      children: "structure",
+    },
+    {
       text: "技术",
       icon: "laptop-code",
       prefix: "05.技术/",
