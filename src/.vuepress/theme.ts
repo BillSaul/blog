@@ -57,10 +57,7 @@ export default hopeTheme(
       // 博主的个人介绍地址
       intro: "/intro.html",
       // 博主的媒体链接配置
-      medias: {
-        Email: "mailto:info@example.com",
-        GitHub: "https://github.com/BillSaul",
-      },
+      medias: {},
     },
 
     // 加密配置
@@ -77,6 +74,17 @@ export default hopeTheme(
 
     // 插件配置
     plugins: {
+      // 公告插件
+      notice: [
+        {
+          path: "/",
+          title: "新主题来咯🎉",
+          content: `
+            <p>本博客已升级到了全新主题，Vuepress版本升级到了2.0</p>
+            <p>如果发现什么问题，欢迎在评论区留言告诉我</p>
+          `,
+        },
+      ],
       // 博客配置
       blog: {
         // 自动生成的摘要的长度
