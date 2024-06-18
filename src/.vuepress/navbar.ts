@@ -44,10 +44,6 @@ export default navbar([
     ],
   },
   {
-    text: "📃 博客日志",
-    link: "/pages/ef044f/",
-  },
-  {
     text: "ℹ️ 关于",
     link: "/intro.md",
   },
