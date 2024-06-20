@@ -99,6 +99,13 @@ export default hopeTheme(
         serverURL: "https://waline-1-h6460307.deta.app",
       },
 
+      // 搜索插件配置
+      docsearch: {
+        appId: "VV20RWK0ME",
+        apiKey: "60749599495f1e191368dacfd581d74a",
+        indexName: "meowpass",
+      },
+
       components: {
         components: ["Badge", "VPCard"],
       },
