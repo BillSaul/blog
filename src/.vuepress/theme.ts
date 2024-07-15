@@ -96,7 +96,7 @@ export default hopeTheme(
         // 评论服务提供者
         provider: "Waline",
         // Waline 的服务端地址
-        serverURL: "https://waline-1-h6460307.deta.app",
+        serverURL: "https://waline.meowpass.com",
       },
 
       // 搜索插件配置
