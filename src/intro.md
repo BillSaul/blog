@@ -1,5 +1,8 @@
 ---
 title: 关于本站
+author:
+  name: 秋澪冬安
+  url: https://www.meowpass.com
 article: false
 timeline: false
 pageInfo: false
