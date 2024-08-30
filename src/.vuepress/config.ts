@@ -19,8 +19,8 @@ export default defineUserConfig({
       `
       var _hmt = _hmt || [];
       (function() {
-        let isLocal = window.location.hostname.includes("localhost");
-        if (!isLocal) {
+        const isMyWebSite = window.location.hostname.includes("meowpass.com");
+        if (isMyWebSite) {
           var hm = document.createElement("script");
           hm.src = "https://hm.baidu.com/hm.js?b3eec175381ad9162a641e5fb8bd0548";
           var s = document.getElementsByTagName("script")[0]; 
@@ -36,8 +36,8 @@ export default defineUserConfig({
       {},
       `
       (function() {
-        let isLocal = window.location.hostname.includes("localhost");
-        if (!isLocal) {
+        const isMyWebSite = window.location.hostname.includes("meowpass.com");
+        if (isMyWebSite) {
           if (typeof Aegis === 'function') {
             var aegis = new Aegis({
               id: 'lJxq1HyLrObPoynRlJ', // 上报 id
