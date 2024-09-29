@@ -26,7 +26,7 @@ export default defineClientConfig({
             } else if (/^\/timeline\//.test(to.path) && buttons.length > 3) {
               buttons[3].click();
             } else if (buttons.length > 1) {
-              buttons[1].click();
+              buttons[2].click();
             }
           });
         }, 500);
