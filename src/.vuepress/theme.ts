@@ -32,8 +32,11 @@ export default hopeTheme(
     // 默认的版权信息
     copyright: "Copyright © 2020-至今 秋澪冬安",
     // 页脚
-    footer:
-      '备案信息：<a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2022009760号-1</a> | <img src="/assets/images/beian_icon.png" style="vertical-align: text-top;margin-right: 2px;"/><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51012402000786">川公网安备51012402000786号</a>',
+    footer: `备案信息：<a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2022009760号-1</a> | 
+      <img src="/assets/images/beian_icon.png" style="vertical-align: text-top;margin-right: 2px;"/>
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51012402000786">
+        川公网安备51012402000786号
+      </a>`,
     // 是否默认显示页脚
     displayFooter: true,
     // 是否展示编辑此页链接
