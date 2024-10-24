@@ -8,7 +8,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "秋澪冬安",
+  title: "薄荷屋",
   description: "个人技术博客，记录和分享各种技术知识",
 
   head: [

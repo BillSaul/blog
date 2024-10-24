@@ -12,7 +12,7 @@ export default hopeTheme(
     // pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
     // 文章显示的默认作者信息
     author: {
-      name: "秋澪冬安",
+      name: "薄荷屋",
       url: "https://www.meowpass.com",
     },
     // 字体图标资源链接
@@ -30,7 +30,7 @@ export default hopeTheme(
     // 侧边栏排序方式
     sidebarSorter: "filename",
     // 默认的版权信息
-    copyright: "Copyright © 2020-至今 秋澪冬安",
+    copyright: "Copyright © 2020-至今 薄荷屋",
     // 页脚
     footer: `备案信息：<a href="https://beian.miit.gov.cn" target="_blank">蜀ICP备2022009760号-1</a> | 
       <img src="/assets/images/beian_icon.png" style="vertical-align: text-top;margin-right: 2px;"/>
@@ -80,11 +80,15 @@ export default hopeTheme(
       // 公告插件
       notice: [
         {
+          key: "notice_20241014_01",
+          showOnce: true,
           path: "/",
-          title: "新主题来咯🎉",
+          title: "🔔 博客更名通知",
           content: `
-            <p>本博客已升级到了全新主题，Vuepress版本升级到了2.0</p>
-            <p>如果发现什么问题，欢迎在评论区留言告诉我</p>
+            <div>博客名称已由</div>
+            <div><strong>秋澪冬安</strong></div>
+            <div>⬇️⬇️更名为⬇️⬇️</div>
+            <div><strong>薄荷屋</strong></div>
           `,
         },
       ],

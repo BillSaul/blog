@@ -1,7 +1,7 @@
 ---
 title: 关于本站
 author:
-  name: 秋澪冬安
+  name: 薄荷屋
   url: https://www.meowpass.com
 article: false
 timeline: false
