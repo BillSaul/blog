@@ -1,0 +1,24 @@
+name: Deploy blog 🚀
+on: [push]
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install COSCLI
+        run: |
+          wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux-amd64
+          mv coscli-linux-amd64 coscli
+          chmod 755 coscli
+      - name: Configure COSCLI
+        env:
+          SECRET_ID: ${{ secrets.SECRETID }}
+          SECRET_KEY: ${{ secrets.SECRETKEY }}
+          BUCKET: ${{ secrets.BUCKET }}
+          REGION: ${{ secrets.REGION }}
+        run: |
+          ./coscli config add -b $BUCKET -r $REGION -a bucket1
+          ./coscli config set --secret_id $SECRET_ID --secret_key $SECRET_KEY
+      - name: Upload
+        run: ./coscli sync -r --meta --delete ./dist/ cos://bucket1/
