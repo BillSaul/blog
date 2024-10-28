@@ -26,4 +26,4 @@ jobs:
           pnpm install
           pnpm run docs:build
       - name: Upload
-        run: ./coscli sync -r --delete ./src/.vuepress/dist/ cos://bucket1/
+        run: ./coscli sync -r --delete --force ./src/.vuepress/dist/ cos://bucket1/
