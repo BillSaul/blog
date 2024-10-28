@@ -21,4 +21,4 @@ jobs:
           ./coscli config add -b $BUCKET -r $REGION -a bucket1
           ./coscli config set --secret_id $SECRET_ID --secret_key $SECRET_KEY
       - name: Upload
-        run: ./coscli sync -r --meta --delete ./dist/ cos://bucket1/
+        run: ./coscli sync -r --delete ./dist/ cos://bucket1/
