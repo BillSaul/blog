@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Install COSCLI
         run: |
           wget https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux-amd64
