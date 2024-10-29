@@ -99,12 +99,12 @@ export default hopeTheme(
       },
 
       // 评论插件配置
-      comment: {
-        // 评论服务提供者
-        provider: "Waline",
-        // Waline 的服务端地址
-        serverURL: "https://waline.meowpass.com",
-      },
+      // comment: {
+      //   // 评论服务提供者
+      //   provider: "Waline",
+      //   // Waline 的服务端地址
+      //   serverURL: "https://waline.meowpass.com",
+      // },
 
       // 搜索插件配置
       docsearch: {
