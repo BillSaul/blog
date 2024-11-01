@@ -91,6 +91,21 @@ export default hopeTheme(
             <div><strong>薄荷屋</strong></div>
           `,
         },
+        {
+          key: "notice_20241101_01",
+          path: "/pages/703eb3/",
+          title: "⚠️ 请注意文章时效性",
+          content: `
+            <strong>
+              <p>
+                <span style="color: red;">请注意！</span>本博客当前主题已更换为：<br/>
+                VuePress Theme Hope
+              </p>
+              <p>由于新的主题自身支持 Waline 评论插件和本教程中的所有功能，因此本教程内容已不再维护。</p>
+              <p>请自行判断本教程是否适用于当前的 Waline 版本和 Vdoing 主题版本。</p>
+            </strong>
+          `,
+        },
       ],
       // 博客配置
       blog: {
