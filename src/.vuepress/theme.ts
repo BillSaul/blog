@@ -80,15 +80,24 @@ export default hopeTheme(
       // 公告插件
       notice: [
         {
-          key: "notice_20241014_01",
+          key: "notice_20241128_01",
           showOnce: true,
           path: "/",
           title: "🔔 博客更名通知",
           content: `
-            <div>博客名称已由</div>
+            <div style="margin-bottom: 8px;">🏷️ 博客名称已由</div>
             <div><strong>秋澪冬安</strong></div>
             <div>⬇️⬇️更名为⬇️⬇️</div>
             <div><strong>薄荷屋</strong></div>
+            <hr />
+            <div style="margin-bottom: 8px;">🏷️ 博客评论系统数据迁移提醒</div>
+            <div>
+              数据库从
+              <strong>leancloud</strong>
+              迁移至
+              <strong>sqlite</strong>
+            </div>
+            <div>如果评论有什么问题，请在评论区或者GitHub issues 中联系我</div>
           `,
         },
         {
