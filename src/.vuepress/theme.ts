@@ -201,6 +201,8 @@ export default hopeTheme(
         provider: "Waline",
         // Waline 的服务端地址
         serverURL: "https://waline.meowpass.com",
+        // 强制登录后才能发表评论
+        login: "force",
       },
 
       // 搜索插件配置
