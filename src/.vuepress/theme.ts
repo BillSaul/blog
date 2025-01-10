@@ -203,6 +203,10 @@ export default hopeTheme(
         serverURL: "https://waline.meowpass.com",
         // 强制登录后才能发表评论
         login: "force",
+        lang: "zh-CN",
+        locale: {
+          placeholder: "欢迎留言。（如果你还没有登录，需在登录后才能留言）"
+        },
       },
 
       // 搜索插件配置
