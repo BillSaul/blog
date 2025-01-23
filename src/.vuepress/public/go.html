@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="bingbot" content="noindex, nofollow" />
+    <meta name="generator" content="not for indexing" />
+    <title>外链提示</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .container {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 90%;
+        margin: 1rem auto;
+        box-sizing: border-box;
+      }
+      .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
+        align-items: center;
+      }
+      .right-section {
+        padding: 2rem;
+        border-left: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .left-section {
+        padding-right: 1rem;
+        text-align: left;
+      }
+      .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon-wrapper svg {
+        width: 100%;
+        height: 100%;
+        color: #3498db;
+      }
+      .btn {
+        padding: 12px 24px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        min-width: 120px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+      }
+      .btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-1px);
+      }
+      .url {
+        padding: 0.8rem;
+        background: #f8f9fa;
+        border-radius: 6px;
+        word-break: break-all;
+        font-size: 0.95rem;
+        color: #2c3e50;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        border: 1px solid #eee;
+      }
+      .security-tip {
+        margin-top: 1.5rem;
+        padding: 0.75rem 1rem;
+        background-color: #fdf2f1;
+        border-left: 4px solid #e74c3c;
+        border-radius: 4px;
+      }
+      .security-tip p {
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: calc(100% - 2rem);
+          margin: 1rem;
+          padding: 1.5rem;
+        }
+        .content-wrapper {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+        .right-section {
+          padding: 1.5rem 0;
+          border-left: none;
+          border-top: 1px solid #eee;
+          order: 2;
+        }
+        .left-section {
+          padding: 0;
+          border: none;
+          order: 1;
+        }
+        .icon-wrapper {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          font-size: 1.3rem;
+          margin-top: 0;
+        }
+        .btn {
+          width: 100%;
+          max-width: 200px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          width: calc(100% - 1.5rem);
+          margin: 0.75rem;
+          padding: 1.25rem;
+        }
+        .content-wrapper {
+          gap: 0.75rem;
+        }
+        .right-section {
+          padding: 1rem 0;
+        }
+        .url {
+          font-size: 0.85rem;
+          padding: 0.6rem;
+        }
+        .security-tip {
+          padding: 0.6rem 0.8rem;
+        }
+        h1 {
+          font-size: 1.2rem;
+          margin-bottom: 0.75rem;
+        }
+        .btn {
+          padding: 10px 20px;
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="left-section">
+          <h1>离开网站提示</h1>
+          <p>您即将离开薄荷屋，访问以下网址：</p>
+          <p class="url" id="target-url"></p>
+          <div class="security-tip">
+            <p>⚠️ 您即将访问的是第三方网站，请注意账号和财产安全</p>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="icon-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              ></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </div>
+          <a href="#" class="btn" id="direct-link" rel="noopener noreferrer">
+            继续访问
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 获取URL参数
+      const urlParams = new URLSearchParams(window.location.search);
+      const targetUrl = urlParams.get("url");
+
+      if (targetUrl) {
+        // 显示目标URL
+        document.getElementById("target-url").textContent = targetUrl;
+        // 设置跳转链接
+        document.getElementById("direct-link").href = targetUrl;
+      } else {
+        document.body.innerHTML =
+          '<div class="container"><h1>链接无效</h1><p>未找到目标网址</p></div>';
+      }
+    </script>
+  </body>
+</html>
