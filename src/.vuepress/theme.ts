@@ -205,6 +205,7 @@ export default hopeTheme(
         locale: {
           placeholder: "欢迎留言。（如果你还没有登录，需在登录后才能留言）",
         },
+        reaction: [],
       },
 
       // 搜索插件配置
