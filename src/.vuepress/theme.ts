@@ -15,8 +15,6 @@ export default hopeTheme(
       name: "薄荷屋",
       url: "https://www.meowpass.com",
     },
-    // 字体图标资源链接
-    iconAssets: "fontawesome-with-brands",
     // 导航栏图标
     logo: "/assets/images/logo.webp",
     // 仓库链接
@@ -205,7 +203,7 @@ export default hopeTheme(
         login: "force",
         lang: "zh-CN",
         locale: {
-          placeholder: "欢迎留言。（如果你还没有登录，需在登录后才能留言）"
+          placeholder: "欢迎留言。（如果你还没有登录，需在登录后才能留言）",
         },
       },
 
@@ -218,6 +216,11 @@ export default hopeTheme(
 
       components: {
         components: ["Badge", "VPCard"],
+      },
+
+      // 图标
+      icon: {
+        assets: "//at.alicdn.com/t/c/font_4830723_ia6whuol489.css",
       },
 
       // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
