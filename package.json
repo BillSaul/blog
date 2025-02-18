@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.19",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.66",
-    "@waline/client": "^3.4.2",
-    "sass-embedded": "^1.83.0",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.78",
+    "@waline/client": "^3.5.2",
+    "sass-embedded": "^1.85.0",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.19",
-    "vuepress-theme-hope": "2.0.0-rc.64"
+    "vuepress-theme-hope": "2.0.0-rc.71"
   },
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
