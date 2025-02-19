@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-# title: 博客主页
+title: 博客主页
 # heroImage: /assets/images/logo.webp
 heroText: 薄荷屋 の blog
 # heroFullScreen: true
