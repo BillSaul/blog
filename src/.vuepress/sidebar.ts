@@ -89,6 +89,21 @@ export default sidebar({
       ],
     },
     {
+      text: "AI工具",
+      icon: "ai-tool",
+      prefix: "20.AI工具/",
+      collapsible: true,
+      children: [
+        {
+          text: "大型语言模型",
+          icon: "large-language-model",
+          prefix: "00.大型语言模型/",
+          collapsible: true,
+          children: "structure",
+        },
+      ],
+    },
+    {
       text: "博客建设",
       icon: "blog-build",
       prefix: "25.博客建设/",

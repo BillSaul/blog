@@ -75,6 +75,7 @@ export default hopeTheme(
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     markdown: {
+      alert: true,
       align: true,
       attrs: true,
       codeTabs: true,
@@ -221,7 +222,7 @@ export default hopeTheme(
 
       // 图标
       icon: {
-        assets: "//at.alicdn.com/t/c/font_4830723_9hpxpp6oy1.css",
+        assets: "//at.alicdn.com/t/c/font_4830723_f0wzjhi9xgk.css",
       },
 
       // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
