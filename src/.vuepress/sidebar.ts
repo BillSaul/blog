@@ -66,6 +66,13 @@ export default sidebar({
           children: "structure",
         },
         {
+          text: "异地组网",
+          icon: "remote-network",
+          prefix: "25.异地组网/",
+          collapsible: true,
+          children: "structure",
+        },
+        {
           text: "Git工具",
           icon: "git",
           prefix: "10.Git工具/",

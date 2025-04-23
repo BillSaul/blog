@@ -222,7 +222,7 @@ export default hopeTheme(
 
       // 图标
       icon: {
-        assets: "//at.alicdn.com/t/c/font_4830723_f0wzjhi9xgk.css",
+        assets: "//at.alicdn.com/t/c/font_4830723_aqtwv5u7p0d.css",
       },
 
       // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
