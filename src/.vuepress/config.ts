@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
+import externalLinkRedirect from "./plugins/external-link-redirect.js";
 import theme from "./theme.js";
 
 const __dirname = getDirname(import.meta.url);
@@ -10,6 +11,14 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "薄荷屋",
   description: "个人技术博客，记录和分享各种技术知识",
+
+  plugins: [
+    externalLinkRedirect({
+      internalDomains: ["meowpass.com"],
+      redirectPath: "https://www.meowpass.com/go.html",
+      urlParamName: "url",
+    }),
+  ],
 
   head: [
     // 百度统计脚本
