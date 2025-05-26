@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import BlogHero from "vuepress-theme-hope/blog/components/BlogHero.js";
+import { Blog } from "vuepress-theme-hope/blog";
 import BingHeroBackground from "vuepress-theme-hope/presets/BingHeroBackground.js";
 import HitokotoBlogHero from "vuepress-theme-hope/presets/HitokotoBlogHero.js";
 </script>
 
 <template>
-  <BlogHero>
-    <template #bg>
+  <Blog>
+    <template #heroBg>
       <BingHeroBackground />
     </template>
-    <template #info="info">
-      <HitokotoBlogHero v-bind="info" />
+    <template #heroInfo="data">
+      <HitokotoBlogHero v-bind="data" />
     </template>
-  </BlogHero>
+  </Blog>
 </template>

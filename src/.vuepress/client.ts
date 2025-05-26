@@ -1,7 +1,23 @@
 import { defineClientConfig } from "vuepress/client";
 import runtime from "./components/runtime.vue";
+import Blog from "./layouts/Blog.vue";
+import { setupRunningTimeFooter } from "vuepress-theme-hope/presets/footerRunningTime.js";
 
 export default defineClientConfig({
+  layouts: {
+    Blog,
+  },
+
+  setup() {
+    setupRunningTimeFooter(
+      new Date("2020-11-04"),
+      {
+        "/": "已运行 :day 天 :hour 小时 :minute 分钟 :second 秒",
+      },
+      true,
+    );
+  },
+
   enhance: ({ app, router, siteData }) => {
     app.component("runtime", runtime);
 

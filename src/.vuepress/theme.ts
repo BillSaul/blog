@@ -109,7 +109,7 @@ export default hopeTheme(
       vPre: true,
 
       // 取消注释它们如果你需要 TeX 支持
-      // markdownMath: {
+      // math: {
       //   // 启用前安装 katex
       //   type: "katex",
       //   // 或者安装 mathjax-full
@@ -146,7 +146,7 @@ export default hopeTheme(
       // sandpack: true,
     },
 
-    // 插件配置
+    // 在这里配置主题提供的插件
     plugins: {
       // 公告插件
       notice: [

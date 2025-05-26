@@ -64,13 +64,6 @@ export default defineUserConfig({
 
   theme,
 
-  alias: {
-    "@theme-hope/modules/blog/components/BlogHero": path.resolve(
-      __dirname,
-      "./components/BlogHero.vue"
-    ),
-  },
-
   // Enable it with pwa
   // shouldPrefetch: false,
 });
