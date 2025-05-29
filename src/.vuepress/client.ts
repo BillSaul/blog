@@ -8,15 +8,15 @@ export default defineClientConfig({
     Blog,
   },
 
-  setup() {
-    setupRunningTimeFooter(
-      new Date("2020-11-04"),
-      {
-        "/": "已运行 :day 天 :hour 小时 :minute 分钟 :second 秒",
-      },
-      true,
-    );
-  },
+  // setup() {
+  //   setupRunningTimeFooter(
+  //     new Date("2020-11-04"),
+  //     {
+  //       "/": "已运行 :day 天 :hour 小时 :minute 分钟 :second 秒",
+  //     },
+  //     true,
+  //   );
+  // },
 
   enhance: ({ app, router, siteData }) => {
     app.component("runtime", runtime);
