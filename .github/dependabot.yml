@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"     # 适用于 pnpm 也 OK
+    directory: "/"               # 根目录下的 package.json
+    schedule:
+      interval: "daily"          # 每天检查一次
+    allow:
+      - dependency-type: "direct"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
