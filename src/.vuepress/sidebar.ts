@@ -137,6 +137,13 @@ export default sidebar({
           collapsible: true,
           children: "structure",
         },
+        {
+          text: "MacOS",
+          icon: "macos",
+          prefix: "10.MacOS/",
+          collapsible: true,
+          children: "structure",
+        },
       ],
     },
     {
