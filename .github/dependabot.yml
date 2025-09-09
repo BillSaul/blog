@@ -9,3 +9,4 @@ updates:
     commit-message:
       prefix: "chore"
       include: "scope"
+    open-pull-requests-limit: 0  # 禁掉普通版本更新，只保留安全更新 PR
