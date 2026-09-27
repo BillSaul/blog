@@ -32,6 +32,13 @@ export default sidebar({
       ],
     },
     {
+      text: "安卓开发",
+      icon: "android",
+      prefix: "03.安卓开发/",
+      collapsible: true,
+      children: "structure",
+    },
+    {
       text: "树莓派",
       icon: "raspberrypi",
       prefix: "05.树莓派/",
